@@ -1,0 +1,14 @@
+// JSON Document
+var parksideSermons =
+[
+	{
+		"title": "Faith When I'm Under Pressure",
+		"link": "http://newsongchurch.com/sermons/service-type/parkside/",
+		"pubdate": "Sun, Nov 08 2015 00:00:00 +0000",
+		"enclosure_url": "https://s3-us-west-2.amazonaws.com/newsongsermons/parkside/20151108-ps-faithWhenI%27mUnderPressure.mp3",
+		"length": "37224356",
+		"guid": "e9422c64-a3db-47db-9119-fef466dec636",
+		"author": "Jim Britts",
+		"summary": "When we face pressure, will we cave? Fall into temptation? Where can we find the strength to persevere when everything may be against us?"
+	}
+]
