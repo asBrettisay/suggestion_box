@@ -1,3 +1,4 @@
+
 app.controller('HomeController', [
 	'$scope',
 	'suggestions',
@@ -6,18 +7,21 @@ app.controller('HomeController', [
 	$scope.posts = suggestions.posts
 
 	$scope.addSuggestion = function() {
+		// Add a suggestion to $scope.posts
 		if ($scope.title = undefined) {
 			return
 		}
-		else {
-			$scope.posts.push({
-				title: $scope.title,
-				upvotes: 0,
-			});
-			$scope.title = "";
-		}
+
+		$scope.posts.push({
+			title: $scope.title,
+			upvotes: 0,
+		});
+
+		$scope.title = "test";
+
 	};
 	$scope.upVote = function(post) {
+		// Increase the upvote of the post by 1.
 		post.upvotes += 1;
 	};
 }]);

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
-css/bootstrap.min.css" rel="stylesheet">
         <title>Suggestion Box</title>
+
         <script type="text/javascript" src="js/vendors/angular.min.js"></script>
         <link src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
     </head>
-<body ng-app="SuggestionBox">
+
+<body ng-app="SuggestionBox" ng-controller="HomeController">
+
   <div ng-view></div>
 
 
+<!-- Suggestion submit form -->
   <form ng-submit="addSuggestion()" style="margin-top: 50px">
     <h3> Submit Your Suggestion </h3>
     <div class="form-group">
@@ -19,6 +23,10 @@ css/bootstrap.min.css" rel="stylesheet">
     </div>
     <button type="submit" class="btn btn-primary">Suggest</button>
   </form>
+
+
+
+
 
 
 
