@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
         <title>Suggestion Box</title>
-        <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+        <script type="text/javascript" src="js/vendors/angular.min.js"></script>
     </head>
-<body ng-app="SuggestionBox" ng-controller="HomeController">
-    <h1> {{ helloWorld }} </h1>
+<body ng-app="SuggestionBox">
+  <div ng-controller="HomeController">
+    <div ng-repeat="post in posts | orderBy: '-upvotes'">
+      <h4>Post: </h3> {{ post.title }}
+      <p>
+        <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span>
+        Upvotes: {{ post.upvotes }}
+      </p>
+      Comments: {{ post.comments }}
+    </div>
+  </div>
+  <form ng-submit="addSuggestion()" style="margin-top: 50px">
+    <h3> Submit Your Suggestion </h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Your suggestion here"
+      ng-model="title"></input>
+    </div>
+    <button type="submit" class="btn btn-primary">Suggest</button>
+  </form>
 
 
 
@@ -16,6 +35,7 @@
 <script type="text/javascript" src="js/controllers/HomeControllers.js"></script>
 
 <!-- Services -->
+<script type="text/javascript" src="js/services/suggestions.js"></script>
 </body>
 
 
