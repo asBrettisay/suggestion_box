@@ -1,20 +1,21 @@
-
 app.controller('HomeController', [
 	'$scope',
 	'suggestions',
 
 	function($scope, suggestions) {
 	$scope.posts = suggestions.posts
-
+	
 	$scope.addSuggestion = function() {
 		// Add a suggestion to $scope.posts
-		if ($scope.title = undefined) {
+		var newSuggestion = $scope.title;
+		if (!$scope.title || $scope.title === "") {
 			return
 		}
 
 		$scope.posts.push({
-			title: $scope.title,
+			title: newSuggestion,
 			upvotes: 0,
+			comments: [],
 		});
 
 		$scope.title = "";

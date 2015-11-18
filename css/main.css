@@ -2,19 +2,29 @@ body {
   background-color: #384157;
   color: #8f8f8f;
 }
+a {
+  color: #c4ad66;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #e3b54b;
+  text-decoration: none;
+}
 
 .header {
   margin: 50px 80px 50px 80px;
   text-align:center;
-  background-color: #312947;
+  background-color: inherit;
   color: #e3b54b;
   text-transform: uppercase;
   font-family: helvetica;
   letter-spacing: 5px;
   padding: 50px;
-  border-radius: 20px;
-
 }
+
+
 
 .main {
   margin: 0 auto;
@@ -31,7 +41,7 @@ body {
 }
 
 .comments {
-  margin: auto;
+  margin: 10px 20px 10px 0px;
   padding: 10px;
 }
 

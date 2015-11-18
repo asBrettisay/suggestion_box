@@ -11,10 +11,28 @@
       </div>
 
       <div class="comments">
+
         <p>
-        Comments: {{ post.comments }}
+          <a href="#/suggestion/{{$index}}">
+        Comments</a>
+        <div ng-repeat="comment in post.comments"><span> - "{{ comment.body }}"</span></div>
         </p>
+      </a>
       </div>
 
   </div>
 </div>
+
+<!-- Suggestion submit form -->
+  <div class="form">
+    <div class="container">
+      <form ng-submit="addSuggestion()" style="margin-top: 50px">
+        <h1> Submit Your Suggestion </h1>
+        <div class="form-group">
+          <input ng-model="title" type="text" class="form-control" placeholder="Your suggestion here"
+          ></input>
+        </div>
+        <button type="submit" class="btn">Suggest</button>
+      </form>
+    </div>
+  </div>
