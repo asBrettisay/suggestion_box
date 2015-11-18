@@ -1,0 +1,51 @@
+body {
+  background-color: #384157;
+  color: #8f8f8f;
+}
+
+.header {
+  margin: 50px 80px 50px 80px;
+  text-align:center;
+  background-color: #312947;
+  color: #e3b54b;
+  text-transform: uppercase;
+  font-family: helvetica;
+  letter-spacing: 5px;
+  padding: 50px;
+  border-radius: 20px;
+
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.main h3 {
+  color: #e3b54b;
+  margin: auto;
+}
+
+.upvotes {
+  margin: auto;
+  padding: 10px;
+}
+
+.comments {
+  margin: auto;
+  padding: 10px;
+}
+
+.btn {
+  color: #384157;
+  border-radius: 10px;
+  background-color: #8f8f8f;
+}
+
+.btn:hover {
+  background-color: #E3B54B;
+  color: #312947;
+}
+
+.form {
+  margin-bottom: 50px;
+}

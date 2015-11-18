@@ -17,7 +17,7 @@ app.controller('HomeController', [
 			upvotes: 0,
 		});
 
-		$scope.title = "test";
+		$scope.title = "";
 
 	};
 	$scope.upVote = function(post) {

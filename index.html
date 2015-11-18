@@ -10,22 +10,38 @@
         </script>
 
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
     </head>
 
 <body ng-app="SuggestionBox" ng-controller="HomeController">
+  <div class="header">
+    <img src="http://waha.asia/wp-content/uploads/2014/05/lightbulb.png" height="156">
+    <h1>Suggestion Box</h1>
+  </div>
 
-  <div ng-view></div>
+
+  <div class="main">
+    <div class="container">
+
+      <div ng-view></div>
+    </div>
+
+  </div>
 
 
 <!-- Suggestion submit form -->
-  <form ng-submit="addSuggestion()" style="margin-top: 50px">
-    <h3> Submit Your Suggestion </h3>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Your suggestion here"
-      ng-model="title"></input>
+  <div class="form">
+    <div class="container">
+      <form ng-submit="addSuggestion()" style="margin-top: 50px">
+        <h1> Submit Your Suggestion </h1>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your suggestion here"
+          ng-model="title"></input>
+        </div>
+        <button type="submit" class="btn">Suggest</button>
+      </form>
     </div>
-    <button type="submit" class="btn btn-primary">Suggest</button>
-  </form>
+  </div>
 
 
 
