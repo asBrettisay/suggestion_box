@@ -1,38 +1,44 @@
-<div class="col-md-6">
-  <div ng-repeat="post in posts | orderBy: '-upvotes'">
+<div class="row">
+  <div class="col-md-6">
+    <div ng-repeat="post in posts | orderBy: '-upvotes'">
+      <div class="suggestion">
 
-    <h3>{{ post.title }}</h3>
+      <h3>{{ post.title }}</h3>
 
-      <div class="upvotes">
+        <div class="upvotes">
 
-          <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span>
-          Upvotes: {{ post.upvotes }}
+            <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span>
+            Upvotes: {{ post.upvotes }}
 
-      </div>
-
-      <div class="comments">
-
-        <p>
-          <a href="#/suggestion/{{$index}}">
-        Comments</a>
-        <div ng-repeat="comment in post.comments"><span> - "{{ comment.body }}"</span></div>
-        </p>
-      </a>
-      </div>
-
-  </div>
-</div>
-
-<!-- Suggestion submit form -->
-  <div class="form">
-    <div class="container">
-      <form ng-submit="addSuggestion()" style="margin-top: 50px">
-        <h1> Submit Your Suggestion </h1>
-        <div class="form-group">
-          <input ng-model="title" type="text" class="form-control" placeholder="Your suggestion here"
-          ></input>
         </div>
-        <button type="submit" class="btn">Suggest</button>
-      </form>
+
+        <div class="comments">
+
+          <p>
+            <a href="#/suggestion/{{$index}}">
+          Comments</a>
+          <div ng-repeat="comment in post.comments"><span> - "{{ comment.body }}"</span></div>
+          </p>
+        </a>
+        </div>
+      </div>
+
     </div>
   </div>
+
+  <!-- Suggestion submit form -->
+  <div class="col-md-6">
+    <div class="form">
+      <div class="container" id="suggestform">
+        <form ng-submit="addSuggestion()" style="margin-top: 50px">
+          <h2> Submit Your Suggestion </h2>
+          <div class="form-group">
+            <input ng-model="title" type="text" class="form-control" placeholder="Your suggestion here"
+            ></input>
+          </div>
+          <button type="submit" class="btn">Suggest</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
