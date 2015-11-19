@@ -5,13 +5,12 @@ body {
 a {
   color: #c4ad66;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a:hover {
   color: #e3b54b;
   text-decoration: none;
-  font-weight: bolder;
 }
 
 .header {
@@ -25,13 +24,7 @@ a:hover {
   padding: 50px;
 }
 
-.suggestion {
-  background-color: #312947;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px 40px 20px 40px;
 
-}
 
 .main {
   margin: 0 auto;
@@ -65,8 +58,4 @@ a:hover {
 
 .form {
   margin-bottom: 50px;
-}
-
-#suggestform {
-  width: 400px;
 }
