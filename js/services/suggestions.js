@@ -2,6 +2,7 @@ app.factory('suggestions', [function() {
   var demoSuggestions = {
     posts: [
       {
+        id: 1,
         title: 'Free pizza at club meetings',
         upvotes: 15,
         comments: [
@@ -16,6 +17,7 @@ app.factory('suggestions', [function() {
          ]
       },
       {
+        id: 2,
         title: 'End all club emails with Laffy Taffy jokes',
         upvotes: 9,
         comments: [
@@ -26,6 +28,7 @@ app.factory('suggestions', [function() {
         ],
       },
       {
+        id: 3,
         title: 'Retrofit water fountain with Gatorade',
         upvotes: 7,
         comments: [
@@ -36,6 +39,7 @@ app.factory('suggestions', [function() {
         ],
       },
       {
+        id: 4,
         title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
         upvotes: 3,
         comments: [],

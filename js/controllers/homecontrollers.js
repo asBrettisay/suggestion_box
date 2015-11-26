@@ -4,7 +4,7 @@ app.controller('HomeController', [
 
 	function($scope, suggestions) {
 	$scope.posts = suggestions.posts
-	
+
 	$scope.addSuggestion = function() {
 		// Add a suggestion to $scope.posts
 		var newSuggestion = $scope.title;
@@ -13,6 +13,7 @@ app.controller('HomeController', [
 		}
 
 		$scope.posts.push({
+			id: $scope.posts.length +1,
 			title: newSuggestion,
 			upvotes: 0,
 			comments: [],
